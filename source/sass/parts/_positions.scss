@@ -1,0 +1,37 @@
+// USAGE pos-{sides}-{size} | example: .pos-t-16 => position-top: 16px;
+$minPositionValue: 0;
+$maxPositionValue: 50;
+
+@for $i from $minPositionValue through $maxPositionValue {
+  .pos-t-#{$i} {
+    top: $i +px !important;
+  }
+}
+
+@for $i from $minPositionValue through $maxPositionValue {
+  .pos-r-#{$i} {
+    right: $i +px !important;
+  }
+}
+
+@for $i from $minPositionValue through $maxPositionValue {
+  .pos-b-#{$i} {
+    bottom: $i +px !important;
+  }
+}
+
+@for $i from $minPositionValue through $maxPositionValue {
+  .pos-l-#{$i} {
+    left: $i +px !important;
+  }
+}
+
+// -----------------
+
+.position-absolute {
+  position: absolute !important;
+}
+
+.position-relative {
+  position: relative !important;
+}

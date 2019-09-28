@@ -1,0 +1,48 @@
+
+// Main Font size in px
+$font-size: 16;
+
+// Grid
+$grid-columns: 12 !default;
+$container-padding-width: 15px !default; // left & right
+$grid-gutter-width: $container-padding-width * 2;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 320px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+// This for `.m-*` and `.p-*` classes (margins, paddings).
+$spacer: 1rem !default;
+$spacers: () !default;
+@function pixel($size) {
+  @return #{$size/$font-size}rem;
+}
+$spacers: map-merge(
+  (
+    0: 0,
+    8: pixel(8),
+    16: pixel(16),
+    24: pixel(24),
+    32: pixel(32),
+    40: pixel(40),
+    48: pixel(48)
+  ),
+  $spacers
+);
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: () !default;
+$sizes: map-merge(
+  (
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto
+  ),
+  $sizes
+);

@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  padding-right: $container-padding-width;
+  padding-left: $container-padding-width;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.outside-container {
+  width: 100%;
+  margin-right: -$container-padding-width;
+  margin-left: -$container-padding-width;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -$container-padding-width;
+  margin-left: -$container-padding-width;
+}
+
+// Colums
+@include make-grid-columns();
