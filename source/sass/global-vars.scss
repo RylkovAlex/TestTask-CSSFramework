@@ -1,11 +1,11 @@
+// MAIN SETTINGS OF FRAMEWORK
 
-// Main Font size in px
-$font-size: 16;
+// Main Font size in px for html tag
+$font-size: 16 !default;
 
-// Grid
+// Grid settings
 $grid-columns: 12 !default;
-$container-padding-width: 15px !default; // left & right
-$grid-gutter-width: $container-padding-width * 2;
+$container-padding-width: 15px !default; // left & right default paddings
 
 $grid-breakpoints: (
   xs: 0,

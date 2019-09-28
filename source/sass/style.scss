@@ -1,7 +1,9 @@
-@import "../scc/normalize.css";
-// @import "../scc/reset.css";
+// Chouse what you need: normalize.css or reset.css
+@import "../css/normalize.css";
+// @import "../css/reset.css";
 
 @import "./global-vars.scss";
+@import "./base.scss";
 @import "./mixins/grid";
 @import "./mixins/mixins.scss";
 //
@@ -10,6 +12,5 @@
 @import "./parts/display";
 @import "./parts/flex";
 @import "./parts/indents";
-@import "./parts/align";
 @import "./parts/positions";
 @import "./parts/text";
